@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+/* ### Primary */
+--Strong-Cyan:hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+/* ### Neutral */
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+
+}
+html{
+  font-size: 18px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h1, h2,h3{
+   color:var(--Dark-Grayish-Blue);
+}
+p{
+   color:var(--Grayish-Blue)
+}
+ /* ///////////////////////////////////header styling//////////////////////////////////////////////// */
+header{
+    padding:6rem 1rem;
+
+    text-align: center;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+header .header-logo{
+    margin-bottom:3rem;
+}
+
+ header h1{
+    margin-bottom:1rem;
+ }
+ header p{
+   
+   margin-bottom:2rem;
+ }
+
+ .buttons{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+   row-gap: 1.5rem;
+ 
+  
+ }
+ button{
+    padding:1rem 0;
+    border-radius: 5rem;
+ }
+.buttons .ios{
+    background-color: var(--Strong-Cyan);
+    color:white;
+    font-size: 0.7rem;
+    font-weight: 600;
+  border:none;
+    box-shadow: 0px 1px 5px  var(--Strong-Cyan);
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+ }
+ .buttons .mac{
+    background-color: var(--Light-Blue);
+    color:white;
+    font-size: 0.7rem;
+    font-weight: 600;
+  border:none;
+    box-shadow: 0px 1px 5px  var(--Light-Blue);
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+ }
+ .buttons .ios:hover{
+  background-color: hsl(171, 73%, 47%);
+ }
+ .buttons .mac:hover{
+  background-color: hsl(233, 98%, 74%);
+ }
+/******************************************************************************************/
+
+/* ///////////////////////feature///////////////////////////////////////////////////////////// */
+
+.features_of_clipboard{
+   margin-bottom: 8rem;
+   padding:0 2rem;
+ }
+ .features_of_clipboard p{
+   font-size: 0.8rem;
+ }
+ 
+ .feature{
+   display: grid;
+ }
+.feature-box p{
+  font-size: 0.7rem;
+}
+ h2.main-text{
+ margin-bottom: 1.2rem;
+text-align: center;
+ }
+ p.main-text{
+  margin-bottom:0.8rem;
+  text-align: center;
+  line-height: 1.3rem;
+ }
+ .feature .desktop_img{
+   margin:3rem 0;
+
+ }
+ .feature .desktop_img img{
+  width:90%;
+ }
+ .feature-box{
+  text-align: center;
+ }
+ .feature-box h3, .feature-box p{
+   margin-bottom:0.8rem;
+ }
+ /* ********************************************************************************************** */
+
+ /* //////////////////////////////accessibility///////////////////////////////////////////// */
+ .accessibility h2, .accessibility p{
+   padding:0 2rem;
+   text-align: center;
+   margin-bottom: 1rem;
+ }
+ .accessibility .devices{
+   text-align: center;
+   margin-top:3rem;
+ }
+ .accessibility .devices img{
+   width:90%;
+
+ }
+ .tools{
+  margin-top:3rem;
+  margin-bottom:6rem;
+  text-align: center;
+ }
+.tools >h2,.tools >p{
+  padding:0.5rem 4rem;
+
+}
+ .tool-list{
+  margin-top:3.5rem;
+  display: grid;
+  row-gap:2rem;
+ }
+ .tool-list .tool-box{
+  padding:0 1.2rem;
+   
+ }
+ .tool-list .tool-box h3{
+ margin-bottom:1rem;
+ }
+ .tool-list .tool-box p{
+ font-size: 0.7rem;
+ }
+ .tool-list .tool-box img{
+  margin-bottom:2rem;
+ }
+ .company{
+  display: grid;
+  row-gap: 2rem;
+  place-items: center;
+  margin-bottom:6rem;
+ 
+ }
+ .company-box{
+  padding:1rem;
+ }
+ article.download{
+  padding: 0 3rem;
+  text-align: center;
+  margin-bottom:6rem;
+ }
+ article.download h2{
+  margin-bottom:1rem;
+ }
+  article.download p{
+    margin-bottom:3rem;
+  }
+
+ img.footer-logo{
+  width:55px;
+  place-self: center;
+}
+footer{
+
+  padding:3rem 0;
+  background-color:  hsla(0, 18%, 97%, 0.824);
+}
+.footer-container{
+  display: grid;
+text-align: center;
+}
+.icon{
+  padding-top:1rem;
+
+}
+.icon svg{
+ width:24px;
+ height:24px;
+ transition:0.2s all ease-in-out;
+ fill:#4C545C;
+transition: 0.2s all ease-in-out;
+margin-right:1rem;
+}
+
+
+
+.footer-container .footer-logo{
+ padding-bottom: 1.5rem;
+ 
+}
+.footer-container ul li{
+  padding-bottom: 1.5rem;
+  color:var(--Dark-Grayish-Blue);
+  transition:0.2s all ease-in-out;
+  list-style:none;
+}
+.footer-container ul li:hover{
+ color:var(--Strong-Cyan);
+ cursor: pointer;
+}
+.icon svg:hover{
+  fill:var(--Strong-Cyan);
+}
+@media screen and (min-width:500px){
+  .buttons{
+    display: grid;
+    grid-template-columns:repeat(2,max-content) ;
+    column-gap: 1rem;
+    
+    }
+     button{
+      padding:0.8rem 2.1rem;
+      font-size: 0.5rem;
+     }
+}
+@media screen and (min-width:650px) {
+  header{
+    padding-bottom:6.7rem;
+background-image: url(images/bg-header-desktop.png);
+}
+header h1{
+margin-bottom:0.5rem;
+}
+header .header-logo img{
+    height: 90px;
+ }
+ header .header-logo{
+  margin-bottom:2.6rem;
+}
+header h1{
+  margin-bottom:0.8rem;
+}
+header p{
+  max-width:550px;
+  margin:0 auto;
+  margin-bottom: 2.2rem;
+}
+.features_of_clipboard{
+  margin-bottom: 2rem;
+
+}
+ 
+.feature .desktop_img img{
+ width:100%;
+}
+ .feature .desktop_img{
+
+   margin:auto;
+ }
+p.main-text{
+  max-width: 530px;
+  margin: auto auto 3.5rem auto;
+
+
+}
+ .feature{
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  column-gap: 2rem;
+
+}
+.features-list{
+place-self: center start;
+
+}
+
+ .features-list .feature-box{
+  text-align: unset;
+}
+.feature-box{
+ text-align: unset;
+ /* margin-bottom: 4rem; */
+
+}
+.feature-box p{
+  max-width:350px;
+}
+
+.feature-box:not(:last-of-type) {
+  margin-bottom:2.5rem;
+}
+
+.accessibility p{
+  max-width:600px;
+  margin:0px auto 3rem auto;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+}
+.accessibility .devices img{
+  width:50%;
+
+}
+.tools{
+  margin-top:2.3rem;
+  margin-bottom:6rem;
+  text-align: center;
+ }
+.tool-list{
+ grid-template-columns: repeat(3,1fr);
+  margin:2.5rem auto 3rem auto;
+  max-width:80%;
+ }
+ .company{
+ 
+  grid-template-columns: repeat(5,minmax(20%,1fr));
+
+  margin:7rem auto 5rem auto;
+  max-width:80vw;
+ 
+ }
+ 
+ .company-box img{
+  width:100%;
+  height:100%;
+  object-fit: contain;
+ }
+ article.download p{
+ max-width:600px;
+ margin: 1rem auto 2.2rem auto;
+}
+.footer-container{
+
+  
+  display: grid;
+text-align: unset;
+grid-template-columns: repeat(5,1fr);
+}
+
+ .logo2{
+  justify-self: center;
+ }
+ .icon{
+  justify-self: center;
+ }
+
+}
