@@ -270,7 +270,7 @@ header p{
   margin-bottom: 2.2rem;
 }
 .features_of_clipboard{
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 
 }
  
@@ -326,7 +326,7 @@ place-self: center start;
 }
 .tools{
   margin-top:2.3rem;
-  margin-bottom:6rem;
+  margin-bottom:8rem;
   text-align: center;
  }
 .tool-list{
@@ -338,7 +338,7 @@ place-self: center start;
  
   grid-template-columns: repeat(5,minmax(20%,1fr));
 
-  margin:7rem auto 5rem auto;
+  margin:7rem auto 7rem auto;
   max-width:80vw;
  
  }
@@ -348,14 +348,15 @@ place-self: center start;
   height:100%;
   object-fit: contain;
  }
+ article.download{
+ margin-bottom:8rem;
+ }
  article.download p{
  max-width:600px;
  margin: 1rem auto 2.2rem auto;
 }
 .footer-container{
-
-  
-  display: grid;
+display: grid;
 text-align: unset;
 grid-template-columns: repeat(5,1fr);
 }
